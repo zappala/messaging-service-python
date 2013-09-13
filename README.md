@@ -2,10 +2,9 @@
 
 This code implements a basic messaging service, to illustrates simple
 client-server programming in Python. The code uses this spec for a lab
-used in [CS 360 Internet Programming](http://cs360.cs.byu.edu) at BYU:
+used in [CS 360 Internet Programming](http://cs360.byu.edu) at BYU:
 
-  [http://cs360.byu.edu/fall-2013/labs/messaging-service](messaging
-  service)
+     [messaging serverice](http://cs360.byu.edu/fall-2013/labs/messaging-service)
 
 The server is in `messageDaemon.py` and the client is in
 `messageClient.py`. A testing script in `messageTest.py` validates
@@ -25,7 +24,3 @@ To run the test script:
 
 **Caution**: This code is singly-threaded, so do not use it as
 an example of how to build a modern, scalable server.
-
-- single thread
-- C++
-- store messages in memory
