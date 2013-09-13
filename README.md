@@ -1,10 +1,12 @@
 # Basic messaging service in Python
 
-This code implements a basic messaging service, to illustrates simple
-client-server programming in Python. The code uses this spec for a lab
-used in [CS 360 Internet Programming](http://cs360.byu.edu) at BYU:
+This code implements a [basic messaging
+service](http://cs360.byu.edu/fall-2013/labs/messaging-service), to
+illustrate simple client-server programming in Python. The spec is
+from a lab used in [CS 360 Internet Programming](http://cs360.byu.edu)
+at BYU:
 
-     [messaging serverice](http://cs360.byu.edu/fall-2013/labs/messaging-service)
+
 
 The server is in `messageDaemon.py` and the client is in
 `messageClient.py`. A testing script in `messageTest.py` validates
