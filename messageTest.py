@@ -118,7 +118,7 @@ class Tester:
 
     def get_message(self):
         index = self.cache.find("\n")
-        if index == "-1":
+        if index == -1:
             return None
         message = self.cache[0:index+1]
         self.cache = self.cache[index+1:]
