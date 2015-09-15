@@ -86,7 +86,7 @@ class Server:
                 return('error invalid message\n')
             data = self.read_put(length)
             if not data and length > 0:
-                return 'error could not read entire message'
+                return 'error could not read entire message\n'
             self.store_message(name,subject,data)
             return "OK\n"
         if fields[0] == 'list':
