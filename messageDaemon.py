@@ -60,7 +60,7 @@ class Server:
 
     def read_message(self):
         index = self.cache.find("\n")
-        if index == "-1":
+        if index == "-1" or index == -1:
             return None
         message = self.cache[0:index+1]
         self.cache = self.cache[index+1:]
@@ -72,6 +72,7 @@ class Server:
 
     def parse_message(self,message):
         fields = message.split()
+        print fields
         if not fields:
             return('error invalid message\n')
         if fields[0] == 'reset':
@@ -85,9 +86,9 @@ class Server:
             except:
                 return('error invalid message\n')
             data = self.read_put(length)
-            if not data:
+            if not data and length > 0:
                 return 'error could not read entire message'
-            self.store_message(name,subject,data)
+            self.store_message(name, subject, data)
             return "OK\n"
         if fields[0] == 'list':
             try:
