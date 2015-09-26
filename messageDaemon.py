@@ -138,7 +138,7 @@ class Server:
             if not d:
                 return None
             data += d
-        if data > length:
+        if len(data) > length:
             self.cache = data[length:]
             data = data[:length]
         else:
