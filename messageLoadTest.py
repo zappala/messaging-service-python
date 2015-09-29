@@ -239,7 +239,7 @@ class WorkloadGenerator:
         for thread in self.threads:
             thread.start()
         for thread in self.threads:
-            thread.join(30)
+            thread.join(60)
             if thread.isAlive():
                 print "Waited too long ... aborting"
                 return
