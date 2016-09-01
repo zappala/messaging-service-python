@@ -85,7 +85,7 @@ class Server:
             except:
                 return('error invalid message\n')
             data = self.read_put(length)
-            if data == None
+            if data == None:
                 return 'error could not read entire message\n'
             self.store_message(name,subject,data)
             return "OK\n"
