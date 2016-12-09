@@ -56,6 +56,7 @@ class Client:
 
     def prompt(self):
         sys.stdout.write("% ")
+        sys.stdout.flush()
 
     def parse_command(self,command):
         fields = command.split()
